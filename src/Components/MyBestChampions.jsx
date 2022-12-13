@@ -23,7 +23,7 @@ function MyBestChampions({ summonerName }) {
         
         getBestChampions();
         
-    }, [getSummoner]);
+    }, [getSummoner, loading]);
     
     
     const myChampions = useMemo(() => {
