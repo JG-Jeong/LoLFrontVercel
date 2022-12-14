@@ -3,10 +3,13 @@ import { useNavigate } from "react-router-dom";
 import Navibar from "../Components/Navibar";
 import React, { useState } from "react";
 import ChampionList from '../Components/ChampionList'
+import { v1 as uuid } from 'uuid';
 
 
 //Home (메인 페이지)
 function Home() {
+    
+    const key = uuid();
     const navigate = useNavigate();
     const [inputName, setInputName] = useState("");
     
@@ -36,7 +39,7 @@ function Home() {
             
             {/*챔프 전체 가져오는 components*/}
             <div className='title-location'>**챔피언별 아이템 추천**</div>
-            <ChampionList/>
+            <ChampionList key={key} />
             
         </div>
     );
