@@ -135,6 +135,7 @@ function User() {
     return (
         <div className="App float-left ">
             <Navibar/>
+            랭크 게임 진행중 입니다. 우측 상대 챔피언을 클릭해 최적의 아이템을 선택하세요.
             <div className="display-flex-width">
                 <MyBestChampions summonerName={summonerName} summonerId={summonerId}/>
                 <div className="display-flex">
