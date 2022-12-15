@@ -54,7 +54,6 @@ function User() {
                     params : { "api_key" : API_KEY }
                 });
                 if ( res?.data ) {
-                    console.log(res.data)
                     setIngameData(res?.data);
                 }
             } catch ( e ) {
@@ -135,9 +134,11 @@ function User() {
     return (
         <div className="App float-left ">
             <Navibar/>
-            랭크 게임 진행중 입니다. 우측 상대 챔피언을 클릭해 최적의 아이템을 선택하세요.
             <div className="display-flex-width">
                 <MyBestChampions summonerName={summonerName} summonerId={summonerId}/>
+                <div>
+                    {ingameData ? <>게임 진행중 입니다. 우측 상대 챔피언을 클릭해 최적의 아이템을 선택하세요.</> : null}
+                </div>
                 <div className="display-flex">
                     <div>
                         {components}
