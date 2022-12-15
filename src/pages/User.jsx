@@ -95,7 +95,10 @@ function User() {
         });
         
         inGameDataTeamRed.sort(function (a, b) {
-            if ( a.summonerName === urlParams.name ) {
+            let x = a.summonerName.toLowerCase();
+            let y = b.summonerName.toLowerCase();
+            let z = urlParams.name.toLowerCase();
+            if ( x === z ) {
                 return -1;
             } else {
                 return 0;
@@ -103,7 +106,10 @@ function User() {
         });
         
         inGameDataTeamBlue.sort(function (a, b) {
-            if ( a.summonerName === urlParams.name ) {
+            let x = a.summonerName.toLowerCase();
+            let y = b.summonerName.toLowerCase();
+            let z = urlParams.name.toLowerCase();
+            if ( x === z ) {
                 return -1;
             } else {
                 return 0;
