@@ -10,9 +10,9 @@ function EnemyChampionNavBar ({ myChampionId, enemyTeam }) {
     
     const navMainBar = enemyTeam.map((enemy, i) => {
         return(
-            <Nav.Item>
+            <Nav.Item className="back-color">
                 <Nav.Link eventKey={`link${i}`} onClick={() => (setTab(i))}>
-                    <EnemyTeamChampionsFace enemy = {enemy}/>
+                    <EnemyTeamChampionsFace key={i} enemy = {enemy}/>
                 </Nav.Link>
             </Nav.Item>
         )

@@ -25,6 +25,7 @@ div {
 
 
 
+
 .box-width{
   width : 500px;
 }
@@ -32,6 +33,10 @@ div {
 .nav-box-margin {
   margin-top : 20px;
 }
+
+/*.back-color{*/
+/*  background-color: #adafbd;*/
+/*}*/
 
 .id-margin {
   flex-direction: column;
@@ -90,7 +95,7 @@ div {
 
 .team-color {
   align-items: center;
-  display: inline-flex;
+  display: flex;
   background-color: #2C62D3;
   width : 300px ;
   height : 100px ;
@@ -101,7 +106,7 @@ div {
 
 .team-color2 {
   align-items: center;
-  display: inline-flex;
+  display: flex;
   background-color: #DB3524;
   width : 300px ;
   height : 100px ;
@@ -131,6 +136,7 @@ div {
   float: left ;
   border: 5px solid;
   border-color: #000000;
+  background-color: white;
 }
 
 .title-location {
