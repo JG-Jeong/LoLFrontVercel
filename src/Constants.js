@@ -1,3 +1,3 @@
 export const RIOTGAMES_API = 'https://kr.api.riotgames.com/lol'
-export const API_KEY = "RGAPI-f17e81ac-2830-4892-95e1-c2e89617d5e0";
+export const API_KEY = "RGAPI-74ac6880-ecf5-443e-8ad3-9d96e5b855ff";
 export const SERVER_URL = "https://sparta-pmg.shop"
